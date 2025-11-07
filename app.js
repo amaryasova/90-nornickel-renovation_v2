@@ -213,42 +213,6 @@ overlay.addEventListener('click', () => {
   }, 300); // подождём завершения анимации
 });
 
-//::::::::::::::::::::::::::::::::::::::::::::::::::
-// Большой автослайдер с фото
-//::::::::::::::::::::::::::::::::::::::::::::::::::
-document.addEventListener('DOMContentLoaded', () => {
-
-  //===== MICRO-SLIDER begin
-  const __ms = document.querySelector('.micro-slider');
-  const __msSlider = new MicroSlider(__ms, {
-    indicators: true,
-    indicatorText: '',
-    slide_easing: 'ease-in-out' // <--- Добавьте эту строку
-  });
-  const __msTimer = 2500;
-  let __msAutoplay = setInterval(() => __msSlider.next(), __msTimer);
-
-  // Initialize Hammer.js AFTER the element is selected
-  // The 'new' keyword for Hammer needs to be capitalized
-  const hammer = new Hammer(__ms);
-
-
-  // Detect gesture tap event with Hammer.js library
-  hammer.on('tap', function(e) {
-    clearInterval(__msAutoplay);
-    console.log(e.type + ' gesture detected. Autoplay stopped.');
-  });
-
-  // Detect gesture swipe event with Hammer.js library
-  hammer.on('swipe', function(e) {
-    clearInterval(__msAutoplay);
-    // Restart autoplay after a swipe
-    __msAutoplay = setInterval(() => __msSlider.next(), __msTimer);
-    console.log(e.type + ' gesture detected. Autoplay restarted.');
-  });
-
-}); 
-
 document.addEventListener('DOMContentLoaded', function() {
   // Находим все контейнеры слайдеров
   const sliderContainers = document.querySelectorAll('.future_slider_container');
@@ -277,6 +241,13 @@ document.addEventListener('DOMContentLoaded', function() {
     let isManualNavigation = false;
     let isSliderInCenter = false; // Переименовано для ясности
     let autoScrollStoppedByUser = false;
+
+    // Переменные для свайпа
+    let touchStartX = 0;
+    let touchEndX = 0;
+    let touchStartY = 0;
+    let isSwiping = false;
+    const SWIPE_THRESHOLD = 50; // минимальное расстояние свайпа в пикселях
 
     console.log(`Слайдер ${containerIndex + 1}: найдено ${sliderItems.length} слайдов`);
 
@@ -354,6 +325,57 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Устанавливаем флаг, что автопрокрутка остановлена вручную
       autoScrollStoppedByUser = true;
+    }
+
+    // Обработчики для свайпа
+    function handleTouchStart(e) {
+      touchStartX = e.changedTouches[0].screenX;
+      touchStartY = e.changedTouches[0].screenY;
+      isSwiping = true;
+    }
+
+    function handleTouchMove(e) {
+      if (!isSwiping) return;
+      
+      // Предотвращаем скролл страницы во время горизонтального свайпа
+      const touchMoveX = e.changedTouches[0].screenX;
+      const touchMoveY = e.changedTouches[0].screenY;
+      
+      const diffX = Math.abs(touchMoveX - touchStartX);
+      const diffY = Math.abs(touchMoveY - touchStartY);
+      
+      // Если движение в основном горизонтальное, предотвращаем скролл страницы
+      if (diffX > diffY && diffX > 10) {
+        e.preventDefault();
+      }
+    }
+
+    function handleTouchEnd(e) {
+      if (!isSwiping) return;
+      
+      touchEndX = e.changedTouches[0].screenX;
+      touchEndY = e.changedTouches[0].screenY;
+      
+      handleSwipeGesture();
+      isSwiping = false;
+    }
+
+    function handleSwipeGesture() {
+      const diffX = touchEndX - touchStartX;
+      const diffY = touchEndY - touchStartY;
+      
+      // Проверяем, что свайп в основном горизонтальный
+      if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > SWIPE_THRESHOLD) {
+        if (diffX > 0) {
+          // Свайп вправо - предыдущий слайд
+          console.log(`Слайдер ${containerIndex + 1}: свайп вправо`);
+          goToPrevSlide();
+        } else {
+          // Свайп влево - следующий слайд
+          console.log(`Слайдер ${containerIndex + 1}: свайп влево`);
+          goToNextSlide();
+        }
+      }
     }
 
     // Автопрокрутка
@@ -472,6 +494,11 @@ document.addEventListener('DOMContentLoaded', function() {
         autoScrollStoppedByUser = true;
       });
     });
+
+    // Обработчики для свайпа
+    container.addEventListener('touchstart', handleTouchStart, { passive: true });
+    container.addEventListener('touchmove', handleTouchMove, { passive: false });
+    container.addEventListener('touchend', handleTouchEnd, { passive: true });
 
     // Пауза при наведении на слайдер
     container.addEventListener('mouseenter', stopAutoSlide);
