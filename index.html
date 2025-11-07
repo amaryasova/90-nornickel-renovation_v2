@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новый Норильск</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="background-img">
+          <div class="background-content">
+            <h5>РЕНОВАЦИЯ СЕВЕРНОГО ГОРОДА</h5>
+            <h1>НОВЫЙ НОРИЛЬСК</h1>
+          </div>          
+          <img src="background_1.png">
+        </div>        
+        <div class="container_start">
+          <div class="offer">
+            <nav>
+              <div class="logo">
+                <a href="https://nornickel.ru/"><img src="logo_nornikel.svg" alt="логотип nornikel"></a>
+              </div>
+              <div id="links" class="links">
+                <a class="link" onclick="scroll_part1()">Город с историей</a>
+                <a class="link" onclick="scroll_part2()">Подготовка</a>
+                <a class="link" onclick="scroll_part3()">Главные объекты</a>
+                <a class="link" onclick="scroll_part4()">Новые дома</a>
+                <a class="link" onclick="scroll_part5()">Комфортная среда</a>
+                <a class="link" onclick="scroll_part6()">Технологии</a>
+                <a class="link" onclick="scroll_part7()">Город для жизни</a>
+              </div>
+              <div id="burger" class="burger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            </nav>
+            <div>
+              <p>Специальный проект Newslab и Норникель</p>
+            </div>
+            <img class="arrow" onclick="scroll_part0()" src="arrow.svg" alt="история">
+          </div>
+        </div>
+      </header>
+</body>
+
+<main>
+    <div class="container">
+      <div class="container_mini part1 part0">
+        <div class="content">
+          <h2 class="title">Город с историей</h2>
+          <p>
+            Норильск — один из крупнейших промышленных городов России, расположенных за Полярным кругом. История города тесно связана 
+            с разработкой богатых месторождений меди, никеля, платины и других металлов.
+          </p>     
+        </div>
+      </div>
+    </div>
+            
+    <div class="tab_container">
+      <div class="tab_header">
+        <div class="tab_header_item active" onclick="switchTab('tab1')">1920-е</div>
+        <div class="tab_header_item" onclick="switchTab('tab2')">1930-е</div>
+        <div class="tab_header_item" onclick="switchTab('tab3')">1940-е</div>
+        <div class="tab_header_item" onclick="switchTab('tab4')">1950-е</div>
+        <div class="tab_header_item" onclick="switchTab('tab5')">1960-е</div>
+        <div class="tab_header_item" onclick="switchTab('tab6')">1970-е</div>
+        <div class="tab_header_item" onclick="switchTab('tab7')">1980-е</div>
+        <div class="tab_header_item" onclick="switchTab('tab8')">30 лет без стройки</div>
+        <div class="tab_header_item" onclick="switchTab('tab9')">Программа переселения</div>
+      </div>
+
+      <div id="tab1" class="tab_item active">
+        <div class="tab_item_img colorize-animation">
+          <img src="101.jpg" alt="1921" class="tab_item_img_img"/>
+        </div>
+        <div class="tab_item_text">
+          <h4>Первый дом</h4>
+          <p class="description_small">
+            Экспедиция 1920 года обнаружила в Норильском районе уголь и выходы сульфидных руд. Руководство страны приняло решение 
+            организовать зимовку и провести более детальные исследования. 
+          </p>
+          <p class="description_small">
+            С помощью местного населения в долине реки Норильской заготовили первую тысячу бревен. Летом 1921 года из них построили первый жилой дом, 
+            а также общежитие, баню и склад. Эти постройки положили начало современного Норильска.
+          </p>
+        </div>
+      </div>
+
+      <div id="tab2" class="tab_item">
+        <div class="tab_item_img colorize-animation">
+          <img src="102.jpg" alt="1930-е" class="tab_item_img_img"/>
+        </div>
+        <div class="tab_item_text">
+          <h4>Хаотичная застройка</h4>
+          <blockquote class="blockquote_mini">
+            <p><span>Главное, что отличало застройку Норильска того времени — полное отсутствие общей идеи планировки. Строения располагались на территории 
+              в основном хаотично, возникая, по мере необходимости, непосредственно вблизи промышленных объектов. Появление к этому времени нескольких 
+              первых улиц – скорее исключение, чем правило. Сотрудники энергично возводимых переделов комбината всячески старались перебраться поближе 
+              к месту работы, пусть даже в ущерб элементарным бытовым удобствам. <...> Многие возводили небольшие хатёнки (балки). Материалом для них 
+              номинально служили шахтные отходы, но фактически применялись взятые на шахте или в цехе доски, бревна и всё, что вокруг плохо лежало, но 
+              годилось для строительства. Например, ящичная фанера.</span></p>
+            <footer><cite>— Станислав Стрючков, председатель Клуба исследователей Таймыра, член союза журналистов России</cite></footer>
+          </blockquote>
+          <p class="description_small">
+            Тогда же возникли многочисленные «поселки», ставшие впоследствии районами города. Всего таких «поселков» к 1939 году было порядка 40.
+          </p>
+          <p class="description_small">
+            <i>
+              По данным переписи 1939 года, в Норильске в это время проживает 13 887 человек.
+            </i>
+          </p>
+        </div>
+      </div>
+
+      <div id="tab3" class="tab_item">
+        <div class="tab_item_img colorize-animation">
+          <img src="103.jpg" alt="1940-е" class="tab_item_img_img"/>
+        </div>
+        <div class="tab_item_text">
+          <h4>Разработка генплана</h4>
+          <p class="description_small">
+            В начале 1940-х годов было принято решение о разработке генплана будущего Норильска. Работала над ним команда ленинградских архитекторов 
+            во главе с Витольдом Непокойчицким. Поэтому Норильск приобрел черты северной столицы, дополненные сталинским неоклассицизмом.
+          </p>
+          <p class="description_small">
+            В 1942 году в городе построили первый благоустроенный многоквартирный дом. Через четыре года в Норильске было уже 100 тыс. кв. метров жилья, работали 4 клуба, театр, 
+            3 детских сада, 2 школы, 7 лечебных учреждений, 3 столовых, 2 библиотеки, техникум, 2 общественные бани, парикмахерские, прачечная, фотостудия и стадион.
+          </p>
+          <p class="description_small">
+            <i>
+              К этому времени в городе жили уже 30,5 тыс. человек.
+            </i>
+          </p>
+        </div>
+      </div>
+
+      <div id="tab4" class="tab_item">
+        <div class="tab_item_img colorize-animation">
+          <img src="104.jpg" alt="1950-е" class="tab_item_img_img"/>
+        </div>
+        <div class="tab_item_text">
+          <h4>Ленинский проспект</h4>
+          <p class="description_small">
+            В 1951-1953 годах на Ленинском проспекте Норильска, его главной улице, сдали первые дома, которые начали строить еще в 1947 году. 
+            Историки отмечают — архитектура в те годы была скорее авторским искусством, чем индустрией. Поэтому стройка шла медленно.
+          </p>
+          <p class="description_small">
+            Сегодня на проспекте находятся наиболее значимые учреждения города, включая администрацию города, управление «Норникеля», 
+            Музей истории освоения и развития Норильского промышленного района, театр драмы имени Маяковского, Дом культуры.
+          </p>
+          <p class="description_small">
+            Позднее, в 1960-х годах рассматривали вариант создания стеклянной «крыши» над Ленинским проспектом для поддержания внутри комфортного микроклимата. 
+            От реализации отказались из-за чрезмерной дороговизны проекта.
+          </p>
+          <p class="description_small">
+            <i>
+              К середине 1950-х в городе жило уже 82 тыс. человек.
+            </i>
+          </p>
+        </div>
+      </div>
+
+      <div id="tab5" class="tab_item">
+        <div class="tab_item_img colorize-animation">
+          <img src="105.jpg" alt="1960-е" class="tab_item_img_img"/>
+        </div>
+        <div class="tab_item_text">
+          <h4>Индустриальный метод</h4>
+          <p class="description_small">
+            В 1961 году в Норильске стартовало строительство первого панельного дома на улице Ленинградской (позднее Кирова).
+          </p>
+          <p class="description_small">
+            Дом строили индустриальным методом из сборного железобетона. Проект был признан удачным, поэтому в 1962 году завод железобетонных 
+            изделий города выпустил панелей еще на четыре таких дома.
+          </p>
+          <p class="description_small">
+            Одна из пятиэтажек на улице Бегичева, по воспоминаниям строителей, на уже готовом свайном поле была возведена за 12 дней.
+          </p>
+          <p>
+            <i>
+              Количество жителей в Норильске перевалило за отметку 100 тыс. человек.
+            </i>
+          </p>
+        </div>
+      </div>
+
+      <div id="tab6" class="tab_item">
+        <div class="tab_item_img colorize-animation">
+          <img src="106.jpg" alt="1970-е" class="tab_item_img_img"/>
+        </div>
+        <div class="tab_item_text">
+          <h4>Первые многоэтажки</h4>
+          <p class="description_small">
+            В Норильске появились первые 9 и 12-этажные дома. Их начали строить на улице Нансена — западной границе Норильска.
+          </p>
+          <blockquote class="blockquote_mini">
+            <p><span>Здесь так же, как и на Октябрьской площади, идея парадного въезда акцентируется двумя вертикалями 12-этажных домов. 
+              Въезды в микрорайоны фиксируются 9- и 12-этажными домами такого же типа. Включение в однородную ткань пятиэтажной застройки 
+              зданий повышенной этажности вносит необходимое разнообразие и обогащает силуэт улицы.</span></p>
+            <footer><cite>— Витольд Непокойчицкий, архитектор</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <div id="tab7" class="tab_item">
+        <div class="tab_item_img colorize-animation">
+          <img src="107.jpg" alt="1980-е" class="tab_item_img_img"/>
+        </div>
+        <div class="tab_item_text">
+          <h4>Пик строительства</h4>
+          <p class="description_small">
+            В Норильске — пик строительства. Градостроительство уже полностью перешло на индустриальные методы строительства. 
+            В 1987-м суммарно в трех городах НПР возвели около 50 жилых домов.
+          </p>
+          <p class="description_small">
+            <i>
+              В 1985 году зафиксировано максимальное количество жителей города — 185 тыс. человек.
+            </i>
+          </p>
+        </div>
+      </div>
+
+      <div id="tab8" class="tab_item">
+        <div class="tab_item_img colorize-animation">
+          <img src="108.jpg" alt="1990-е — 2010-е" class="tab_item_img_img"/>
+        </div>
+        <div class="tab_item_text">
+          <h4>30 лет без стройки</h4>
+          <p class="description_small">
+            После распада СССР население Норильска сократилось на 40 тыс. человек.
+          </p>
+          <p class="description_small">
+            Этому способствовали естественные демографические процессы: приехавшие в Норильск в середине 1950-х достигли пенсионного возраста и хотели переехать на «материк». 
+            Также в этот период происходил отток населения из Восточной Сибири. Это было вызвано различиями в условиях и уровне жизни, так как льготы северян в тот период лишь частично компенсировали тяжелые условия.
+          </p>
+          <p class="description_small">
+            Последний в Норильске жилой дом (перед долгой градостроительной паузой, которая прерывается сейчас) возвели в 2002 году. Его адрес — Орджоникидзе, 4б.
+          </p>
+          <p class="description_small">
+            Слияние городов Кайеркан и Талнах в Норильск в 2004 году позволило компенсировать сокращение населения и сохранить его количество на уровне 175 тыс. человек.
+          </p>
+        </div>
+      </div>
+
+      <div id="tab9" class="tab_item">
+        <div class="tab_item_img colorize-animation">
+          <img src="109.jpg" alt="С 2011" class="tab_item_img_img"/>
+        </div>
+        <div class="tab_item_text">
+          <h4>Программа переселения</h4>
+          <p class="description_small">
+            С 2011 года в Норильске начинает действовать уникальная четырехсторонняя программа между «Норникелем», муниципалитетом, правительством края и РФ. 
+            Изначально программа переселения была ориентирована на тех, кто потерял все сбережения после распада СССР и до стабилизации экономики.
+          </p>
+          <p class="description_small">
+            На переселение семьям в общей сложности выдали почти 23 миллиарда рублей, из них 4,7 миллиарда выделило правительство РФ, 1,6 миллиарда – Красноярский край и 16,3 миллиарда – «Норникель». 
+            С 2011 по 2024 год по программам переселения смогли переехать в районы с благоприятным климатом 9613 семей: 7798 из Норильска и 1815 из Дудинки.
+          </p>
+          <blockquote class="blockquote_mini">
+            <p><span>Единственный опыт, когда частная компания самостоятельно взяла на себя обязательства по финансированию переезда людей в благоприятные условия по профильной программе, 
+              в рамках государственно-частного партнерства. Причем среди участников вклад компании был самым большим.</span></p>
+            <footer><cite>— Дмитрий Свиридов, заместитель председателя Законодательного собрания Красноярского края</cite></footer>
+          </blockquote>
+        </div>
+      </div> 
+    </div>    
+  </div>
+
+    <div class="container">
+      <div class="container_mini part2">
+        <div class="content">
+          <h2 class="title">Подготовка</h2>
+          <p class="description">
+            20 февраля 2021 года подписано новое четырехстороннее соглашение между федеральным Министерством по развитию Дальнего Востока и Арктики, 
+            Красноярским краем, администрацией Норильска и компанией «Норникель». Как и предыдущее десятилетнее соглашение, оно закрепляло условия 
+            программы переселения северян на «материк», но основной акцент в документе был сделан на реновацию жилья и городской инфраструктуры.
+          </p>
+          <div class="incut_container">
+            <div class="incut_container_img">
+              <img src="201.jpeg" alt="Фото с подписания соглашения"/>
+            </div>
+            <div class="incut_container_text">              
+              <p class="accent_txt">
+                Четырехстороннее соглашение предполагает реновацию жилищного фонда Норильска, модернизацию его коммунальной и инженерной инфраструктуры, 
+                развитие социальной инфраструктуры, формирование комфортной городской среды. Всё это должно помочь повысить качество жизни в северной столице 
+                Красноярского края, создать современные условия проживания и сформировать Норильск как опорный город Арктической зоны России.
+              </p>
+            </div>
+            <p class="description">
+              Документ также определяет объем финансирования мероприятий реновации в 120,1 млрд рублей на период до 2035 года. Из них 24 млрд — средства федерального бюджета, 
+              14,8 млрд — средства консолидированного бюджета Красноярского края и 81,3 млрд — средства «Норникеля».
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="indicator_container_one">    
+      <div class="indicator_item">
+        <div class="indicator_item_desc"><p>Сроки реализации комплексного плана социально-экономического развития Норильска</p></div>
+        <div class="indicator_item_number"><span class="animnum" data-target="2021" data-current="500">2000</span> <span class="indicator_item_number_mini"> — </span> <span class="animnum" data-target="2035" data-current="500">2000</span></div>    
+      </div>
+    </div>
+
+    <div class="indicator_container">
+      <div class="indicator_item">
+        <div class="indicator_item_desc"><p>Общее финансирование программы</p></div>
+        <div class="indicator_item_number"><span class="animnum" data-target="120" data-current="0">0</span> <span class="indicator_item_number_mini">млрд руб</span></div>    
+      </div>
+      <div class="indicator_item">
+        <div class="indicator_item_desc"><p>Выделено «Норникелем»</p></div>
+        <div class="indicator_item_number"><span class="animnum" data-target="81.3" data-current="0">0</span> <span class="indicator_item_number_mini">млрд руб</span></div>    
+      </div>
+    </div>
+
+    <div class="container_mini">
+      <div class="content">
+        <div class="incut_container">
+          <div class="incut_container_img">
+            <img src="202.jpeg" alt="Фото с подписания соглашения"/>
+          </div>
+          <div class="incut_container_text">
+            <p class="description">
+              Результат взаимодействия сторон — разработка Комплексного плана социально-экономического развития Норильска до 2035 года — масштабные работы по обновлению города. 
+              Для их координации в «Норникеле» в 2021 году создан Проектный офис. Вместе с городской администрацией он выступает заказчиком, ведет технический контроль и надзор 
+              за производством работ.
+            </p>
+            <p class="description">
+              Кроме того, еще задолго до подписания соглашения усилиями Агентства развития Норильска разработан мастер-план обновления города, совместно с норильчанами сформулированы 
+              предложения, которые легли в основу большинства проектов.
+            </p>
+          </div>
+        </div>
+        <div class="incut_container">
+          <div class="incut_container_text">
+            <blockquote class="blockquote_main">
+              <p><span>Мы не с чистого листа начинаем эту работу, она давно велась, во-первых. Во-вторых, у компании есть воля и ресурсы, чтобы задуманное реализовать. И мы это сделаем.</span></p>
+              <footer><cite>— Владимир Потанин, президент компании «Норникель»</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>   
+
+
+    <div class="container">
+      <div class="container_mini part3">
+        <div class="content">
+          <h2 class="title">Главные объекты</h2>
+
+          <div class="incut_container">
+            <div class="incut_container_img">
+              <div class="future_slider_container">
+                <div class="future_slider"> 
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>                 
+                  <div class="future_slider_item image-only" id="future_slider_item_11">
+                    <div class="future_slider_item_img">
+                      <img src="311.jpg" alt="Лицей им. В. И. Долгих"/>
+                      <div class="future_slider_caption">
+                        Здание займет 12 тыс. кв. метров и будет трехэтажным, сложной формы
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_12">
+                    <div class="future_slider_item_img">
+                      <img src="315.jpg" alt="Лицей им. В. И. Долгих"/>
+                      <div class="future_slider_caption">
+                        В лицее разместят 44 учебных класса, 28 коворкингов, несколько мастерских и лабораторий с современным оборудованием
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_13">
+                    <div class="future_slider_item_img">
+                      <img src="314.jpg" alt="Лицей им. В. И. Долгих"/>
+                      <div class="future_slider_caption">
+                        Спортивный блок будет состоять из большого спортивного, хореографического и тренажерного залов, многофункционального зала с мобильными перегородками, 25-метрового бассейна и открытых уличных стадионов
+                      </div>
+                    </div>              
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_14">
+                    <div class="future_slider_item_img">
+                      <img src="313.jpg" alt="Лицей им. В. И. Долгих"/>
+                      <div class="future_slider_caption">
+                        Лицей им. В. В. Долгих станет уникальным учреждением, аккумулирующим и транслирующим лучшие образовательные практики страны
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_15">
+                    <div class="future_slider_item_img">
+                      <img src="312.jpg" alt="Лицей им. В. И. Долгих"/>
+                      <div class="future_slider_caption">
+                        В ближайшее время на стройплощадке начнутся подготовительные работы: возведение подпорной стены, термостабилизация грунтов, отсыпка и выравнивание территории и пр.
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_15">
+                    <div class="future_slider_item_img">
+                      <img src="316.jpg" alt="Лицей им. В. И. Долгих"/>
+                      <div class="future_slider_caption">
+                        После окончания строительства «Норникель» передаст здание лицея г. Норильску
+                      </div>
+                    </div>             
+                  </div>
+                  
+                  <input type="radio" name="r" id="r311" checked>
+                  <input type="radio" name="r" id="r312">
+                  <input type="radio" name="r" id="r313">
+                  <input type="radio" name="r" id="r314">
+                  <input type="radio" name="r" id="r315">
+                  <input type="radio" name="r" id="r316">
+                  
+                  <div class="navigation_auto">
+                    <div class="auto_btn311"></div>
+                    <div class="auto_btn312"></div>
+                    <div class="auto_btn313"></div>
+                    <div class="auto_btn314"></div>
+                    <div class="auto_btn315"></div>
+                    <div class="auto_btn316"></div>
+                  </div>          
+                </div>  
+                <div class="navigation_manual">
+                  <label for="r311" class="manual_btn"></label>
+                  <label for="r312" class="manual_btn"></label>
+                  <label for="r313" class="manual_btn"></label>
+                  <label for="r314" class="manual_btn"></label>
+                  <label for="r315" class="manual_btn"></label>
+                  <label for="r316" class="manual_btn"></label>
+                </div>      
+              </div> 
+            </div>
+            <div class="incut_container_text">
+              <h4>Лицей им. В. И. Долгих</h4>
+                <p class="description_small">
+                  Лицей им. Долгих — многопрофильный образовательный комплекс на 1100 мест — появится на ул. 50 лет Октября. 
+                  Это дополнительное обязательство, которое «Норникель» взял на себя в деле реновации Норильска.
+                </p>
+                <p class="description_small">
+                  Здание комплекса будет трехэтажным, сложной формы. На территории разместят футбольное поле, в самом здании будут 
+                  спортивный и хореографический залы, 25-метровый бассейн.
+                </p>
+                <p class="description_small">
+                  Для детей разных возрастов предусмотрят разные входы в здание, места для проведения мастер-классов 
+                  и различных мероприятий для всех желающих. Таким образом, лицей будет одновременно образовательным социокультурным центром 
+                  и местом для образовательных проектов.
+                </p>
+                <p class="description_small">
+                  Уже завершены инженерные изыскания, продолжаются работы по проектированию. Стройка начнется в 2025 году.
+                </p>
+            </div>
+          </div>
+
+          <div class="incut_container">
+            <div class="incut_container_img">
+              <div class="future_slider_container">
+                <div class="future_slider"> 
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div> 
+                  <div class="future_slider_item image-only" id="future_slider_item_12">
+                    <div class="future_slider_item_img">
+                      <img src="321.jpg" alt="Поликлиника на 1000 посещений в смену"/>
+                      <div class="future_slider_caption">
+                        В основании поликлиники 750 свай диаметром 620 мм каждая
+                      </div>
+                    </div>             
+                  </div>                 
+                  <div class="future_slider_item image-only" id="future_slider_item_11">
+                    <div class="future_slider_item_img">
+                      <img src="323.jpg" alt="Поликлиника на 1000 посещений в смену"/>
+                      <div class="future_slider_caption">
+                        Строители приступили к следующему важному этапу — устройству опалубки, обвязке арматуры и бетонированию плиты перекрытия
+                      </div>
+                    </div>             
+                  </div>                  
+                  <div class="future_slider_item image-only" id="future_slider_item_13">
+                    <div class="future_slider_item_img">
+                      <img src="322.jpg" alt="Поликлиника на 1000 посещений в смену"/>
+                      <div class="future_slider_caption">
+                        Затем начнут монтировать железобетонные конструкции
+                      </div>
+                    </div>              
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_14">
+                    <div class="future_slider_item_img">
+                      <img src="324.jpg" alt="Поликлиника на 1000 посещений в смену"/>
+                      <div class="future_slider_caption">
+                        Всего в семиэтажном здании будет 19 входов и выходов для посетителей и персонала, и девять подъемников
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_15">
+                    <div class="future_slider_item_img">
+                      <img src="320.jpg" alt="Поликлиника на 1000 посещений в смену"/>
+                      <div class="future_slider_caption">
+                        Поликлиника рассчитана на 1000 посещений в смену. В ней разместят детское и взрослое отделения, стоматологию, женскую консультацию, травматологию, диагностическую службу
+                      </div>
+                    </div>             
+                  </div>
+                  
+                  <input type="radio" name="r" id="r321" checked>
+                  <input type="radio" name="r" id="r322">
+                  <input type="radio" name="r" id="r323">
+                  <input type="radio" name="r" id="r324">
+                  <input type="radio" name="r" id="r325">
+                  
+                  <div class="navigation_auto">
+                    <div class="auto_btn321"></div>
+                    <div class="auto_btn322"></div>
+                    <div class="auto_btn323"></div>
+                    <div class="auto_btn324"></div>
+                    <div class="auto_btn325"></div>
+                  </div>          
+                </div>  
+                <div class="navigation_manual">
+                  <label for="r321" class="manual_btn"></label>
+                  <label for="r322" class="manual_btn"></label>
+                  <label for="r323" class="manual_btn"></label>
+                  <label for="r324" class="manual_btn"></label>
+                  <label for="r325" class="manual_btn"></label>
+                </div>      
+              </div> 
+            </div>
+            <div class="incut_container_text">
+              <h4>Поликлиника на 1000 посещений в смену</h4>
+                <p class="description_small">
+                  Новая поликлиника возводится в районе Талнах. 6-этажное здание позволит обеспечить 1000 посещений в день.
+                </p>
+                <p class="description_small">
+                  Сейчас на площадке завершены работы по устройству буронабивных свай. В основание здания на глубину от 20 до 23 м установили все 750 свай диаметром 620 мм каждая. 
+                </p>
+                <p class="description_small">
+                  В медучреждении будут: детское и взрослое отделения, стоматология, женская консультация, травматология, диагностическая служба и т. д. 
+                  В здании будет несколько лифтов и отдельные входы, позволяющие разделить потоки посетителей. По завершении строительства (намечено на 2028 год), 
+                  здание поликлиники в рамках программы благотворительности передадут администрации Норильска.
+                </p>
+            </div>
+          </div>
+
+          <div class="incut_container">
+            <div class="incut_container_img">
+              <div class="future_slider_container">
+                <div class="future_slider"> 
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>                  
+                  <div class="future_slider_item image-only" id="future_slider_item_11">
+                    <div class="future_slider_item_img">
+                      <img src="331.JPG" alt="Общественно-культурный центр «БАШНЯ»"/>
+                      <div class="future_slider_caption">
+                        «Башня» находится в одном из зданий-близнецов, во многом олицетворяющих Норильск и имеющих статус главной достопримечательности города. Возвели объект более 70 лет назад, в 1951 году
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_12">
+                    <div class="future_slider_item_img">
+                      <img src="334.JPG" alt="Общественно-культурный центр «БАШНЯ»"/>
+                      <div class="future_slider_caption">
+                        Само здание — объект культурного наследия регионального значения. В нем присутствуют предметы охраны культуры: кессонные перекрытия, гипсовые декоративные элементы, балясины
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_15">
+                    <div class="future_slider_item_img">
+                      <img src="332.jpg" alt="Общественно-культурный центр «БАШНЯ»"/>
+                      <div class="future_slider_caption">
+                        При реконструкции элементов сохранили их первозданный вид
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_13">
+                    <div class="future_slider_item_img">
+                      <img src="333.JPG" alt="Общественно-культурный центр «БАШНЯ»"/>
+                      <div class="future_slider_caption">
+                        Во время работ объект посещал губернатор Михаил Котюков. О ходе реконструкции главе региона докладывает вице-президент — директор Красноярского представительства «Норникеля» Сергей Ткаченко
+                      </div>
+                    </div>              
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_14">
+                    <div class="future_slider_item_img">
+                      <img src="335.jpeg" alt="Общественно-культурный центр «БАШНЯ»"/>
+                      <div class="future_slider_caption">
+                        Открытие «Башни» прошло с размахом
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_15">
+                    <div class="future_slider_item_img">
+                      <img src="336.jpg" alt="Общественно-культурный центр «БАШНЯ»"/>
+                      <div class="future_slider_caption">
+                        Украшает здание интерактивный арт-объект «Сердце Башни»
+                      </div>
+                    </div>             
+                  </div>                  
+                  <div class="future_slider_item image-only" id="future_slider_item_12">
+                    <div class="future_slider_item_img">
+                      <img src="338.jpg" alt="Общественно-культурный центр «БАШНЯ»"/>
+                      <div class="future_slider_caption">
+                        Теперь это место для отдыха, встреч, прогулок, лекций и развлечений 
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_13">
+                    <div class="future_slider_item_img">
+                      <img src="339.jpg" alt="Общественно-культурный центр «БАШНЯ»"/>
+                      <div class="future_slider_caption">
+                      </div>
+                    </div>              
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_14">
+                    <div class="future_slider_item_img">
+                      <img src="3310.jpg" alt="Общественно-культурный центр «БАШНЯ»"/>
+                      <div class="future_slider_caption">
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_11">
+                    <div class="future_slider_item_img">
+                      <img src="337.jpg" alt="Общественно-культурный центр «БАШНЯ»"/>
+                    </div>             
+                  </div>                  
+                  
+                  <input type="radio" name="r" id="r331" checked>
+                  <input type="radio" name="r" id="r332">
+                  <input type="radio" name="r" id="r333">
+                  <input type="radio" name="r" id="r334">
+                  <input type="radio" name="r" id="r335">
+                  <input type="radio" name="r" id="r336">
+                  <input type="radio" name="r" id="r337">
+                  <input type="radio" name="r" id="r338">
+                  <input type="radio" name="r" id="r339">
+                  <input type="radio" name="r" id="r3310">
+                  
+                  <div class="navigation_auto">
+                    <div class="auto_btn331"></div>
+                    <div class="auto_btn332"></div>
+                    <div class="auto_btn333"></div>
+                    <div class="auto_btn334"></div>
+                    <div class="auto_btn335"></div>
+                    <div class="auto_btn336"></div>
+                    <div class="auto_btn337"></div>
+                    <div class="auto_btn338"></div>
+                    <div class="auto_btn339"></div>
+                    <div class="auto_btn3310"></div>
+                  </div>          
+                </div>  
+                <div class="navigation_manual">
+                  <label for="r331" class="manual_btn"></label>
+                  <label for="r332" class="manual_btn"></label>
+                  <label for="r333" class="manual_btn"></label>
+                  <label for="r334" class="manual_btn"></label>
+                  <label for="r335" class="manual_btn"></label>
+                  <label for="r336" class="manual_btn"></label>
+                  <label for="r337" class="manual_btn"></label>
+                  <label for="r338" class="manual_btn"></label>
+                  <label for="r339" class="manual_btn"></label>
+                  <label for="r3310" class="manual_btn"></label>
+                </div>      
+              </div> 
+            </div>
+            <div class="incut_container_text">
+              <h4>Общественно-культурный центр «БАШНЯ»</h4>
+                <p class="description_small">
+                  Новая поликлиника возводится в районе Талнах. 6-этажное здание обеспечит 1 000 посещений в день.
+                </p>
+                <p class="description_small">
+                  Сейчас на площадке завершены работы по устройству буронабивных свай. В основание здания на глубину от 20 до 23 м установили все 750 свай диаметром 620 мм каждая. 
+                </p>
+                <p class="description_small">
+                  В медучреждении будут: детское и взрослое отделения, стоматология, женская консультация, травматология, диагностическая служба и т.д. 
+                  В здании будет несколько лифтов и отдельные входы, позволяющие разделить потоки посетителей. По завершении строительства (намечено на 2028 год), 
+                  здание поликлиники в рамках программы благотворительности передадут администрации Норильска.
+                </p>                
+            </div>
+          </div>
+
+          <div class="incut_container">
+            <div class="incut_container_img">
+              <div class="future_slider_container">
+                <div class="future_slider">
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>                   
+                  <div class="future_slider_item image-only" id="future_slider_item_11">
+                    <div class="future_slider_item_img">
+                      <img src="341.jpeg" alt="Обновление исторического здания ЗГУ"/>
+                      <div class="future_slider_caption">
+                        ЗГУ им. Н. М. Федоровского — единственный государственный вуз на Таймыре и самый северный — в России
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_12">
+                    <div class="future_slider_item_img">
+                      <img src="342.jpeg" alt="Обновление исторического здания ЗГУ"/>
+                      <div class="future_slider_caption">
+                        Основан в 1944 году
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_13">
+                    <div class="future_slider_item_img">
+                      <img src="343.jpeg" alt="Обновление исторического здания ЗГУ"/>
+                      <div class="future_slider_caption">
+                        Готовит специалистов по 150+ учебным программам в рамках 11 направлений подготовки
+                      </div>
+                    </div>              
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_14">
+                    <div class="future_slider_item_img">
+                      <img src="344.jpeg" alt="Обновление исторического здания ЗГУ"/>
+                      <div class="future_slider_caption">
+                        В вузе работают более 100 преподавателей и обучаются более 1000 студентов
+                      </div>
+                    </div>             
+                  </div>                  
+                  <div class="future_slider_item image-only" id="future_slider_item_15">
+                    <div class="future_slider_item_img">
+                      <img src="346.jpg" alt="Обновление исторического здания ЗГУ"/>
+                      <div class="future_slider_caption">
+                        На данный момент на всех этажах выполнены демонтажные работы
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_15">
+                    <div class="future_slider_item_img">
+                      <img src="345.jpeg" alt="Обновление исторического здания ЗГУ"/>
+                      <div class="future_slider_caption">
+                        Строительно-монтажные работы начнутся в 2025
+                      </div>
+                    </div>             
+                  </div>
+                  
+                  <input type="radio" name="r" id="r341" checked>
+                  <input type="radio" name="r" id="r342">
+                  <input type="radio" name="r" id="r343">
+                  <input type="radio" name="r" id="r344">
+                  <input type="radio" name="r" id="r345">
+                  <input type="radio" name="r" id="r346">
+                  
+                  <div class="navigation_auto">
+                    <div class="auto_btn341"></div>
+                    <div class="auto_btn342"></div>
+                    <div class="auto_btn343"></div>
+                    <div class="auto_btn344"></div>
+                    <div class="auto_btn345"></div>
+                    <div class="auto_btn346"></div>
+                  </div>          
+                </div>  
+                <div class="navigation_manual">
+                  <label for="r341" class="manual_btn"></label>
+                  <label for="r342" class="manual_btn"></label>
+                  <label for="r343" class="manual_btn"></label>
+                  <label for="r344" class="manual_btn"></label>
+                  <label for="r345" class="manual_btn"></label>
+                  <label for="r346" class="manual_btn"></label>
+                </div>      
+              </div> 
+            </div>
+            <div class="incut_container_text">
+              <h4>Обновление исторического здания ЗГУ</h4>
+                <p class="description_small">
+                  Главный вуз Норильска – Заполярный государственный университет имени Н.М. Федоровского, тоже ждет обновление. 
+                  Здание возведено 73 года назад и нуждается в капремонте.
+                </p>
+                <p class="description_small">
+                  На данный момент на всех этажах выполнены демонтажные работы. Также завершена разработка документации, получено одобрение от госэкспертизы и оценка сметы.
+                </p>
+                <p class="description_small">
+                  Строительно-монтажные работы начнутся в 2025, а завершатся в 2027 году.
+                </p>
+            </div>
+          </div>
+          
+          <h3>Что еще</h3>
+
+          <div class="incut_container">
+            <div class="incut_container_img">
+              <div class="future_slider_container">
+                <div class="future_slider">
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>                   
+                  <div class="future_slider_item image-only" id="future_slider_item_11">
+                    <div class="future_slider_item_img">
+                      <img src="352.jpeg" alt="Пожарное депо в Оганере"/>
+                      <div class="future_slider_caption">
+                        Пожарное депо в Оганере – одно из самых современных в России. Здесь собраны все новейшие технологии в области пожаротушения
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_12">
+                    <div class="future_slider_item_img">
+                      <img src="353.jpg" alt="Пожарное депо в Оганере"/>
+                      <div class="future_slider_caption">
+                        Депо включает инновационный учебный класс, диспетчерский пункт с современным оборудованием
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_13">
+                    <div class="future_slider_item_img">
+                      <img src="351.jpg" alt="Пожарное депо в Оганере"/>
+                      <div class="future_slider_caption">
+                        На открытии депо присутствовал Александр Чуприян, на тот момент и. о. министра РФ по делам гражданской обороны, 
+                        ЧС и ликвидации последствий стихийных бедствий
+                      </div>
+                    </div>              
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_14">
+                    <div class="future_slider_item_img">
+                      <img src="354.jpg" alt="Пожарное депо в Оганере"/>
+                      <div class="future_slider_caption">
+                        В зоне выездов 42-й пожарной части — территория от Вальковского шоссе до моста через реку Норильскую
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_15">
+                    <div class="future_slider_item_img">
+                      <img src="355.jpg" alt="Пожарное депо в Оганере"/>
+                      <div class="future_slider_caption">
+                        Кроме того, есть еще так называемые подрайонные выезды, когда при необходимости спасатели оперативно направляются в любой район Норильска
+                      </div>
+                    </div>             
+                  </div>
+                  
+                  <input type="radio" name="r" id="r1" checked>
+                  <input type="radio" name="r" id="r2">
+                  <input type="radio" name="r" id="r3">
+                  <input type="radio" name="r" id="r4">
+                  <input type="radio" name="r" id="r5">
+                  
+                  <div class="navigation_auto">
+                    <div class="auto_btn1"></div>
+                    <div class="auto_btn2"></div>
+                    <div class="auto_btn3"></div>
+                    <div class="auto_btn4"></div>
+                    <div class="auto_btn5"></div>
+                  </div>          
+                </div>  
+                <div class="navigation_manual">
+                  <label for="r1" class="manual_btn"></label>
+                  <label for="r2" class="manual_btn"></label>
+                  <label for="r3" class="manual_btn"></label>
+                  <label for="r4" class="manual_btn"></label>
+                  <label for="r5" class="manual_btn"></label>
+                </div>      
+              </div> 
+            </div>
+            <div class="incut_container_text">
+              <h4>Пожарное депо в Оганере</h4>
+                <p class="description_small">
+                  В 2022 году в норильском Оганере открыли новую пожарную часть. Финансировала строительство компания «Норникель». Общий объем средств — 306 млн рублей.
+                </p>
+                <p class="description_small">
+                  Здание пожарного депо подключено к электросетям, централизованным сетям водоснабжения и водоотведения. 
+                  Объект передан в безвозмездное пользование ГУ МЧС России по Красноярскому краю.
+                </p>
+                <p class="description_small">
+                  Штатная численность личного состава подразделения — 41 человек. На вооружение поставлены 4 пожарные автоцистерны АЦ 7,0-70 на базе Урал «Next 5557».
+                </p>
+            </div>
+          </div>
+
+          <div class="incut_container">
+            <div class="incut_container_img">
+              <div class="future_slider_container">
+                <div class="future_slider">  
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>                 
+                  <div class="future_slider_item image-only" id="future_slider_item_11">
+                    <div class="future_slider_item_img">
+                      <img src="361.jpg" alt="Комплексный центр социального обслуживания населения"/>
+                      <div class="future_slider_caption">
+                        Центр обслуживает более 6 тыс. человек, здесь действует принцип одного окна
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_12">
+                    <div class="future_slider_item_img">
+                      <img src="362.jpg" alt="Комплексный центр социального обслуживания населения"/>
+                      <div class="future_slider_caption">
+                        Капремонт здания провели в рамках четырехстороннего соглашения о реновации Норильска
+                      </div>
+                    </div>             
+                  </div>
+                                    
+                  <input type="radio" name="r" id="r51" checked>
+                  <input type="radio" name="r" id="r52">
+                  
+                  <div class="navigation_auto">
+                    <div class="auto_btn51"></div>
+                    <div class="auto_btn52"></div>
+                  </div>          
+                </div>  
+                <div class="navigation_manual">
+                  <label for="r51" class="manual_btn"></label>
+                  <label for="r52" class="manual_btn"></label>
+                </div>      
+              </div> 
+            </div>
+            <div class="incut_container_text">
+              <h4>Комплексный центр социального обслуживания населения</h4>
+                <p class="description_small">
+                  В 2022 г. после ремонта открылось здание, в котором разместилось сразу три учреждения соцобслуживания. 
+                  Это комплексный центр соцобслуживания населения (КЦСОН), реабилитационный центр для детей-инвалидов, детей и подростков 
+                  с ОВЗ «Виктория» и Центр соцпомощи семье и детям.
+                </p>
+                <p class="description_small">
+                  Центр обслуживает более 6 тыс. человек, здесь действует принцип одного окна.
+                </p>
+                <p class="description_small">
+                  Капремонт здания провели в рамках четырехстороннего соглашения о реновации Норильска. Для Центра закупили всё необходимое оборудование, 
+                  он полностью адаптирован для маломобильных граждан.
+                </p>
+            </div>
+          </div>
+
+          <div class="incut_container">
+            <div class="incut_container_img">
+              <div class="future_slider_container">
+                <div class="future_slider"> 
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>                  
+                  <div class="future_slider_item image-only" id="future_slider_item_21">
+                    <div class="future_slider_item_img">
+                      <img src="371.jpeg" alt="Реконструкция детского сада «Голубок»"/>
+                      <div class="future_slider_caption">
+                        Открытие детского сада. Ленточку перерезают глава Норильска Дмитрий Карасев (слева) и вице-президент – директор Красноярского представительства «Норникеля» Сергей Ткаченко
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_22">
+                    <div class="future_slider_item_img">
+                      <img src="372.jpeg" alt="Реконструкция детского сада «Голубок»"/>
+                      <div class="future_slider_caption">
+                        Губернатор Михаил Котюков посетил и этот объект, когда там шла реконструкция
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_23">
+                    <div class="future_slider_item_img">
+                      <img src="373.jpg" alt="Реконструкция детского сада «Голубок»"/>
+                      <div class="future_slider_caption">
+                        В ходе реконструкции стояла задача не просто вдохнуть новую жизнь в здание 1985 г. постройки, а объединить в детсаду комфорт, уют и современные образовательные технологии
+                      </div>
+                    </div>              
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_24">
+                    <div class="future_slider_item_img">
+                      <img src="374.jpeg" alt="Реконструкция детского сада «Голубок»"/>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_25">
+                    <div class="future_slider_item_img">
+                      <img src="375.jpeg" alt="Реконструкция детского сада «Голубок»"/>
+                    </div>             
+                  </div>
+                  
+                  <input type="radio" name="r" id="r6" checked>
+                  <input type="radio" name="r" id="r7">
+                  <input type="radio" name="r" id="r8">
+                  <input type="radio" name="r" id="r9">
+                  <input type="radio" name="r" id="r10">
+                  
+                  <div class="navigation_auto">
+                    <div class="auto_btn6"></div>
+                    <div class="auto_btn7"></div>
+                    <div class="auto_btn8"></div>
+                    <div class="auto_btn9"></div>
+                    <div class="auto_btn10"></div>
+                  </div>          
+                </div>  
+                <div class="navigation_manual">
+                  <label for="r6" class="manual_btn"></label>
+                  <label for="r7" class="manual_btn"></label>
+                  <label for="r8" class="manual_btn"></label>
+                  <label for="r9" class="manual_btn"></label>
+                  <label for="r10" class="manual_btn"></label>
+                </div>      
+              </div> 
+            </div>
+            <div class="incut_container_text">
+              <h4>Реконструкция детского сада «Голубок»</h4>
+                <p class="description_small">
+                  В ноябре 2024 года в Кайеркане открылся после реконструкции детсад. Капремонт проводился силами компании «Норникель».
+                </p>
+                <p class="description_small">
+                  Детсад рассчитан на 236 мест. Здесь есть все необходимые учебные принадлежности, музыкальные инструменты, спортинвентарь и предметы для игр и творчества, 
+                  а также бассейн. Созданы условия для всех детей, включая малышей с ОВЗ.
+                </p>
+            </div>
+          </div>
+
+          <div class="incut_container">
+            <div class="incut_container_img">
+              <div class="future_slider_container">
+                <div class="future_slider">  
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>                 
+                  <div class="future_slider_item image-only" id="future_slider_item_31">
+                    <div class="future_slider_item_img">
+                      <img src="381.jpeg" alt="Ледовая арена «Айсберг» в Талнахе"/>
+                      <div class="future_slider_caption">
+                        В открытии арены принимал участие Министр РФ по развитию Дальнего Востока и Арктики Алексей Чекунков
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_32">
+                    <div class="future_slider_item_img">
+                      <img src="382.jpeg" alt="Ледовая арена «Айсберг» в Талнахе"/>
+                      <div class="future_slider_caption">
+                        Первая шайба (справа на фото Алексей Чекунков, слева – первый вице-президент, руководитель блока по взаимодействию с органами власти «Норникеля» Николай Уткин)
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_33">
+                    <div class="future_slider_item_img">
+                      <img src="383.jpeg" alt="Ледовая арена «Айсберг» в Талнахе"/>
+                      <div class="future_slider_caption">
+                        Арена «Айсберг» в районе Талнах
+                      </div>
+                    </div>              
+                  </div>                  
+                  <div class="future_slider_item image-only" id="future_slider_item_35">
+                    <div class="future_slider_item_img">
+                      <img src="385.jpeg" alt="Ледовая арена «Айсберг» в Талнахе"/>                      
+                      <div class="future_slider_caption">
+                        Объект принимает матчи Ночной хоккейной лиги, работает для массового катания, проката и для занятий спортшколы
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_36">
+                    <div class="future_slider_item_img">
+                      <img src="386.jpeg" alt="Ледовая арена «Айсберг» в Талнахе"/>                      
+                      <div class="future_slider_caption">
+                        Арена позволяет почти круглогодично заниматься зимними видами спорта
+                      </div>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_37">
+                    <div class="future_slider_item_img">
+                      <img src="387.jpeg" alt="Ледовая арена «Айсберг» в Талнахе"/>
+                    </div>             
+                  </div>
+                  <div class="future_slider_item image-only" id="future_slider_item_34">
+                    <div class="future_slider_item_img">
+                      <img src="384.jpeg" alt="Ледовая арена «Айсберг» в Талнахе"/>
+                    </div>             
+                  </div>
+                  
+                  <input type="radio" name="r" id="r11" checked>
+                  <input type="radio" name="r" id="r12">
+                  <input type="radio" name="r" id="r13">
+                  <input type="radio" name="r" id="r14">
+                  <input type="radio" name="r" id="r15">
+                  <input type="radio" name="r" id="r16">
+                  <input type="radio" name="r" id="r17">
+                  
+                  <div class="navigation_auto">
+                    <div class="auto_btn11"></div>
+                    <div class="auto_btn12"></div>
+                    <div class="auto_btn13"></div>
+                    <div class="auto_btn14"></div>
+                    <div class="auto_btn15"></div>
+                    <div class="auto_btn16"></div>
+                    <div class="auto_btn17"></div>
+                  </div>          
+                </div>  
+                <div class="navigation_manual">
+                  <label for="r11" class="manual_btn"></label>
+                  <label for="r12" class="manual_btn"></label>
+                  <label for="r13" class="manual_btn"></label>
+                  <label for="r14" class="manual_btn"></label>
+                  <label for="r15" class="manual_btn"></label>
+                  <label for="r16" class="manual_btn"></label>
+                  <label for="r17" class="manual_btn"></label>
+                </div>      
+              </div> 
+            </div>
+            <div class="incut_container_text">
+              <h4>Ледовая арена «Айсберг» в Талнахе</h4>
+                <p class="description_small">
+                  В 2023 году в норильском Талнахе торжественно открыта новая ледовая площадка «Айсберг». Площадка построена по инициативе «Норникеля» 
+                  для развития спорта в Талнахе и тренировок хоккеистов и встреч Ночной хоккейной лиги.
+                </p>
+                <p class="description_small">
+                  Техническая особенность проекта — применение самых современных систем кондиционирования и поддержки температуры намораживания льда. 
+                  Они позволят эксплуатировать арену круглый год. Также каток обустроен раздевалками и вспомогательными помещениями, а для обеспечения качественного 
+                  ледового покрытия компания закупила одну из последних моделей ледозаливочной машины ZAMBONI 526. Для проката в «Айсберге» доступно 400 пар коньков 
+                  от 31-го до 47-го размера.
+                </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="container_mini">
+      <div class="content">          
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container_mini part4">
+        <div class="content">
+          <h2 class="title">Новые дома</h2>
+          <div class="future_slider_container">
+            <div class="future_slider">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> 
+              <div class="future_slider_item image-only" id="future_slider_item_1">
+                <div class="future_slider_item_img">
+                  <img src="401.jpeg" alt="Дома на ул. 50 лет Октября на этапе строительства"/>
+                  <div class="future_slider_caption">
+                    На сегодняшний день компанией «Норникель» построено в Норильске четыре новых многоквартирных дома, два из которых введены в эксплуатацию. 
+                  </div>
+                </div>                           
+              </div>
+              <div class="future_slider_item image-only" id="future_slider_item_2">
+                <div class="future_slider_item_img">
+                  <img src="402.jpg" alt="Девятиэтажки будут сданы до конца 2025 года"/>
+                  <div class="future_slider_caption">
+                    К концу 2025 г. будут полностью готовы еще две монолитных девятиэтажки на ул. 50 лет Октября.
+                  </div>
+                </div>            
+              </div>
+              <div class="future_slider_item image-only" id="future_slider_item_3">
+                <div class="future_slider_item_img">
+                  <img src="403.jpg" alt="Дом на Солнечном проезде - первый, сданный в рамках реновации. Его по собственной инициативе реконструировала компания «Норникель»"/>
+                  <div class="future_slider_caption">
+                    Еще один дом программы реновации находится на Солнечном проезде. Это капитально реконструированная «Норникелем» коробка здания, возведенная в 1996 г. 
+                    Теперь в новых квартирах живут специалисты, приглашенные в Норильск из других городов страны. 
+                  </div>
+                </div>              
+                          
+              </div>     
+              <div class="future_slider_item image-only" id="future_slider_item_4">
+                <div class="future_slider_item_img">
+                  <img src="404.JPG" alt="Вручение ключей от новеньких квартир"/>
+                  <div class="future_slider_caption">
+                    Дома комплексного плана социально-экономического развития Норильска строятся также за счет консолидированного бюджета администрацией города. 
+                    Первые ключи северянам вручили 26 февраля 2025 г. В первую очередь в квартиры заехали переселенцы из аварийного жилья, многодетные семьи и те, 
+                    кто находился в очереди на жилье по соцнайму.
+                  </div>
+                </div>              
+                            
+              </div>
+              <div class="future_slider_item image-only" id="future_slider_item_5">
+                <div class="future_slider_item_img">
+                  <img src="405.JPG" alt="Новый дом на ул. Лауреатов — один из первых, введенных в эксплуатацию по программе реновации"/>
+                  <div class="future_slider_caption">
+                    Всего к настоящему моменту в Норильске введено в эксплуатацию шесть многоквартирных домов. Те из них, что возвел «Норникель», 
+                    переданы городу по программе благотворительности.
+                  </div>
+                </div>                           
+              </div>
+              <div class="future_slider_item image-only" id="future_slider_item_6">
+                <div class="future_slider_item_img">
+                  <img src="406.jpg" alt="Дом на ул. Кирова, построенный «Норникелем», незадолго до сдачи"/>
+                  <div class="future_slider_caption">
+                    В апреле 2025 г. администрация Норильска выдала разрешения на строительство еще нескольких жилых домов на ул. Нансена в Талнахе, на ул. Бауманской и ул. Пионерской. 
+                    Сдача объектов запланирована на конец 2027 г.
+                  </div>
+                </div>              
+              </div>
+              <div class="future_slider_item image-only" id="future_slider_item_7">
+                <div class="future_slider_item_img">
+                  <img src="407.jpg" alt="Дом «Норникеля» на Павлова, 23"/>
+                  <div class="future_slider_caption">
+                    <blockquote class="blockquote_mini trans">
+                      <p><span>Темпы нарастили серьезные, крейсерские. Не стоит напоминать, что более 30 лет полноценного гражданского строительства не велось ни в Норильске, 
+                        ни в Арктике в целом. «Норникелю» важно создать хорошие условия для проживания норильчан, которые трудятся на наших предприятиях. Это, в свою очередь, 
+                        важный аспект и с точки зрения привлечения персонала.</span></p>
+                      <footer><cite>— Николай Уткин, первый вице-президент, руководитель блока по взаимодействию с органами власти компании «Норникель»</cite></footer>
+                    </blockquote>
+                  </div>
+                </div>                     
+              </div>             
+              
+              <input type="radio" name="r" id="r31" checked>
+              <input type="radio" name="r" id="r32">
+              <input type="radio" name="r" id="r33">
+              <input type="radio" name="r" id="r34">
+              <input type="radio" name="r" id="r35">
+              <input type="radio" name="r" id="r36">
+              <input type="radio" name="r" id="r37">
+              
+              <div class="navigation_auto">
+                <div class="auto_btn31"></div>
+                <div class="auto_btn32"></div>
+                <div class="auto_btn33"></div>
+                <div class="auto_btn34"></div>
+                <div class="auto_btn35"></div>
+                <div class="auto_btn36"></div>
+                <div class="auto_btn37"></div>
+              </div>          
+            </div>  
+            <div class="navigation_manual">
+              <label for="r31" class="manual_btn"></label>
+              <label for="r32" class="manual_btn"></label>
+              <label for="r33" class="manual_btn"></label>
+              <label for="r34" class="manual_btn"></label>
+              <label for="r35" class="manual_btn"></label>
+              <label for="r36" class="manual_btn"></label>
+              <label for="r37" class="manual_btn"></label>
+            </div>      
+          </div>
+
+          <h3>Новые дома строятся по современным технологиям с учетом суровых погодных условий Крайнего Севера</h3>
+          <div class="comfort_container">
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="411.JPG" alt="Домофон"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Домофоны установлены в подъездах жилых домов</p>
+              </div>
+            </div>
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="412.jpg" alt="Дома оборудованы современными лифтами"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Дома оборудованы современными лифтами</p>
+              </div>
+            </div>
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="419.jpg" alt="Современные системы позволяют снизить теплопотери"/>
+                <div class="overlay"></div>
+                <p class="hover-text">«Современные системы позволяют снизить теплопотери</p>
+              </div>
+            </div>
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="414.jpg" alt="Безопасность — главный принцип нового жилья"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Безопасность — главный принцип нового жилья</p>
+              </div>
+            </div>
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="418.jpg" alt="Полы в квартирах на первых этажах — с подогревом"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Полы в квартирах на первых этажах — с подогревом</p>
+              </div>
+            </div> 
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="416.jpg" alt="Во всех домах есть квартиры, обустроенные для маломобильных жителей"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Во всех домах есть квартиры, обустроенные для маломобильных жителей</p>
+              </div>
+            </div> 
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="413.jpg" alt="Чистовая отделка квартир"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Чистовая отделка квартир</p>
+              </div>
+            </div>                            
+            
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="415.jpg" alt="В шести домах, построенных по программе реновации, уже во всю обживаются новоселы"/>
+                <div class="overlay"></div>
+                <p class="hover-text">В шести домах, построенных по программе реновации, уже вовсю обживаются новоселы</p>                
+              </div>
+            </div>
+                     
+            
+            
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="417.jpg" alt="Переезду рады все"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Переезду рады все</p>                
+              </div>
+            </div>
+          </div>           
+          
+        </div>
+      </div>      
+    </div>
+
+    <div class="container">
+      <div class="container_mini part5">
+        <div class="content">
+          <h2 class="title">Комфортная среда</h2>
+          <p class="description">
+            Реновация затрагивает не только жилье, но и всю инфраструктуру Норильска. К 2027 году в Норильске планируется завершить обновление важного для города 
+            коммуникационного коллектора на ул. Мира, а также построить большое количество новых объектов.
+          </p>
+
+          <div class="comfort_container">
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="501.jpg" alt="Иллюминация и подсветка жилых зданий"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Иллюминация и подсветка жилых зданий</p>
+              </div>
+              <div class="comfort_column_text">
+                <h4>Лицей имени Долгих</h4>
+                <p class="description_small">
+                  Лицей им. Долгих — многопрофильный образовательный комплекс на 1100 мест — появится на ул. 50 лет Октября. 
+                  Это дополнительное обязательство, которое «Норникель» взял на себя в деле реновации Норильска.
+                </p>
+                <p class="description_small">
+                  Здание комплекса будет трехэтажным, сложной формы. На территории разместят футбольное поле, в самом здании будут спортивный и хореографический залы,25-метровый бассейн.
+                </p>
+                <p class="description_small">
+                  Для детей разных возрастов предусмотрят разные входы в здание, места для проведения мастер-классов и различных мероприятий для всех желающих. 
+                  Таким образом, лицей будет одновременно образовательными социокультурным центром и местом для образовательных проектов.
+                </p>
+                <p class="description_small">
+                  На данный момент завершены инженерные изыскания, продолжаются работы по проектированию. Стройка начнется в 2025 году.
+                </p>
+                <p class="description_small">
+                  После ее завершения здание передадут администрации Норильска.
+                </p>
+              </div>
+            </div>
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="502.jpg" alt="Подсветка производственных объектов"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Подсветка производственных объектов</p>
+              </div>
+              <div class="comfort_column_text">
+                <h4>Общественно-культурный центр «Башня»</h4>
+                <p">
+                Здание на Ленинском проспекте Норильска является одной из визитных карточек северной столицы края. На протяжении 65 лет здесь находилась научно-техническая библиотека, 
+                до 2018 года власти города предлагали отдать помещения под архив. Но опрос показал, что горожане хотел бы превратить «Башню» в общественное пространство.
+                </p>
+                <p class="description_small">
+                  «Башню» превратили в своеобразный «город в городе», где переплетаются работа, творчество, отдых и общение. Здесь есть место для реализации идей, обучения, а также отдыха с семьей.
+                </p>
+                <p class="description_small">
+                  Верхний этаж стал смотровой площадкой с панорамным видом, а на первом создали зимний сад, открыли кафе и магазины.
+                </p>
+              </div>
+            </div>
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="503.jpg" alt="Перголы с качелями в центре Норильска"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Перголы с качелями в центре Норильска</p>
+              </div>
+              <div class="comfort_column_text">
+                <h4>Комплексный центр социального обслуживания населения</h4>
+                <p class="description_small">
+                  В 2022 году после ремонта открылось здание, в котором расположены сразу три учреждения соцобслуживания. 
+                  Это комплексный центр соцобслуживания населения (КЦСОН), реабилитационный центр для детей-инвалидов, детей и подростков с ОВЗ «Виктория» 
+                  и Центр соцпомощи семье и детям.
+                </p>
+                <p class="description_small">
+                  Центр обслуживает более 6 тысяч человек, здесь действует принцип одного окна.
+                </p>
+                <p class="description_small">
+                  Капремонт здания провели в рамках четырехстороннего соглашения о реновации Норильска. 
+                  Для Центра закупили всё необходимое оборудование, он полностью адаптирован для маломобильных граждан.
+                </p>
+              </div>
+            </div>                            
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="504.jpg" alt="Ремонт фасадов"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Ремонт фасадов</p>
+              </div>
+              <div class="comfort_column_text">
+                <h4>Поликлиника в Талнахе</h4>
+                <p class="description_small">
+                  Новая поликлиника возводится в районе Талнах. 6-этажное здание позволит обеспечить 1000 посещений в день.
+                </p>
+                <p class="description_small">
+                  Сейчас на площадке уже забурены большинство свай, идет подготовка к заливке фундамента и возведению каркаса. 
+                  Техническая часть проекта уже получила одобрение госэкспертизы.
+                </p>
+                <p class="description_small">
+                  В медучреждении будут: детское и взрослое отделения, стоматология, женская консультация, травматология, диагностическая служба и т.д. 
+                  Также несколько лифтов и отдельные входы, позволяющие разделить потоки посетителей.
+                </p>
+              </div>
+            </div>
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="505.jpg" alt="Северобусы"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Северобусы</p>
+              </div>
+              <div class="comfort_column_text">
+                <h4>Детский сад в Кайеркане</h4>
+                <p class="description_small">
+                  В ноябре 2024 года в Кайеркане открылся после реконструкции детсад. Капремонт проводили силами компании «Норникель».
+                </p>
+                <p class="description_small">
+                  Детсад рассчитан на 236 мест. Здесь есть все необходимые учебные принадлежности, музыкальные инструменты, спортинвентарь и предметы для игр и творчества, а также бассейн. 
+                  В учреждении создали условия для всех детей, включая малышей с ОВЗ.
+                </p>
+              </div>
+            </div>      
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="506.jpg" alt="Теплые остановки"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Теплые остановки</p>                
+              </div>
+              <div class="comfort_column_text">
+                <h4>Ремонт Заполярного госуниверситета</h4>
+                <p class="description_small">
+                  Главный вуз Норильска — Заполярный государственный университет имени Н. М. Федоровского тоже ждет обновление. Здание возведено 73 года назад и нуждается в капремонте.
+                </p>
+                <p class="description_small">
+                  На данный момент на всех этажах выполнены демонтажные работы. Завершена разработка документации, получено одобрение от госэкспертизы и оценка сметы.
+                </p>
+                <p class="description_small">
+                  Строительно-монтажные работы начнутся в 2025, а завершатся — в 2027 году.
+                </p>
+              </div>
+            </div>
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="507.jpg" alt="Озеленение"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Озеленение</p>                
+              </div>
+              <div class="comfort_column_text">                
+                <h4>Пожарное депо</h4>
+                <p class="description_small">
+                  В 2022 году в норильском Оганере открыли новую пожарную часть. Финансировала строительство компания «Норникель». Общий объем средств — 306 млн рублей.
+                </p>
+                <p class="description_small">
+                  Здание пожарного депо подключено к электросетям, централизованным сетям водоснабжения и водоотведения. 
+                  Объект передан в безвозмездное пользование ГУ МЧС России по Красноярскому краю.
+                </p>
+                <p class="description_small">
+                  Штатная численность личного состава подразделения — 41 человек. На вооружение поставлены 4 пожарные автоцистерны АЦ 7,0-70 на базе Урал «Next 5557».
+                </p>
+              </div>
+            </div>
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="508.jpg" alt="Парк у озера Долгое"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Парк у озера Долгое</p>
+              </div>
+              <div class="comfort_column_text">
+                <h4>Ледовая арена «Айсберг»</h4>
+                <p class="description_small">
+                  В 2023 году в норильском Талнахе была торжественно открыта новая ледовая площадка «Айсберг», позволившая горожанам заниматься спортом.
+                </p>
+                <p class="description_small">
+                  Площадка построена по инициативе «Норникеля» для развития спорта в Талнахе. Техническая особенность проекта —
+                  применение самых современных систем кондиционирования и поддержки температуры намораживания льда. Они позволят 
+                  эксплуатировать арену круглый год.
+                </p>
+                <p class="description_small">
+                  Здесь проводятся интенсивные тренировки хоккеистов и встречи «Ночной хоккейной лиги».
+                </p>
+              </div>
+            </div> 
+            <div class="comfort_column">
+              <button class="close-btn">×</button>
+              <div class="comfort_column_img">
+                <img src="509.jpg" alt="Ремонт коллекторного хозяйства"/>
+                <div class="overlay"></div>
+                <p class="hover-text">Ремонт коллекторного хозяйства</p>
+              </div>
+              <div class="comfort_column_text">
+                <h4>«Северобусы» и теплые остановки</h4>
+                <p class="description_small">
+                  C 2019 года в Норильске устанавливают теплые остановки. Температура внутри павильона регулируется в зависимости от погоды, 
+                  а двери открываются нажатием кнопки. Остановки под видеонаблюдением: камеры транслируют всё, что происходит внутри павильона, 
+                  в Единую дежурно-диспетчерскую службу.
+                </p>
+                <p class="description_small">
+                  «Северобусы» в Норильске используются с 2022 года. Автобусы изготовлены на Ликинском заводе по спецзаказу: с учетом климата северного города. 
+                  Транспорт рассчитан для передвижения всех пассажиров, включая маломобильных.
+                </p>
+              </div>
+            </div>
+          </div>           
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container_mini part6">
+        <div class="content">
+          <h2 class="title">Технологии</h2>
+          <h3>Термостабилизация грунтов</h3>
+          <div class="benefit_container">
+            <div class="benefit_column line-icons">
+              <img src="location.gif" alt="Термостабилизация грунтов"/>
+              <p>
+                Дома в заполярном Норильске строят на многолетней мерзлоте. Из-за ее растепления многие здания со временем теряют устойчивость. 
+                Решение проблемы — <b>термостабилизация грунтов</b>, предусмотренная комплексным планом социально-экономического развития Норильска до 2035 года.
+              </p>
+            </div>
+            <div class="benefit_column line-icons">
+              <img src="chemist.gif" alt="Метод инъектирования"/>
+              <p>
+                Устойчивость грунтов повышают различными методами. 
+                Так, для многоквартирного дома по ул. Надеждинской, 20 выбран <b>метод инъектирования</b>: под каждую сваю закачивают специальный бетон с полимерами.
+              </p>
+            </div>
+            <div class="benefit_column line-icons">
+              <img src="wheel.gif" alt="Метод проморозки грунтов"/>
+              <p>
+                А чтобы укрепить основание домов по ул. Бауманской, 34 и ул. Космонавтов, 31 используется <b>метод проморозки грунтов</b>: 
+                по контуру зданий устанавливаются охлаждающие элементы, объединенные системой труб, по которой циркулирует хладагент. 
+              </p>
+            </div>
+          </div>
+          <h3>Испытания свай</h3>
+          <div class="benefit_container">
+            <div class="benefit_column line-icons">
+              <img src="prototype.gif" alt="Испытания свай"/>
+              <p>
+                <b>Испытания свай</b> – один из ключевых этапов геотехнического контроля, который напрямую влияет на надежность и экономичность строительства. 
+                Для будущего пятиэтажного дома по ул. Пионерской, 8 в Талнахе запланировано обустроить <b>монолитную плиту</b>.
+              </p>
+            </div>
+            <div class="benefit_column line-icons">
+              <img src="drilling-process.gif" alt="Сваи-стойки"/>
+              <p>
+                Для возведения восьмиэтажного жилого дома по ул. Бауманская, 31 в районе Талнах решено использовать <b>сваи-стойки</b>, 
+                которые будут опираться на прочное скальное основание, залегающее на глубине от 17 до 24 м.
+              </p>
+            </div>
+            <div class="benefit_column line-icons">
+              <img src="cold.gif" alt="Экспериментальные сваи"/>
+              <p>
+                Для строительства пятиэтажки по Нансена, 6 в Центральном районе выбрана другая технология: <b>экспериментальные сваи</b> 
+                длиной 14–16 м будут вмораживать в многолетнемёрзлый грунт.
+              </p>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container_mini part7">
+        <div class="content">
+          <h2 class="title">Город для жизни</h2> 
+          <p class="description">
+            Работа по реновации Норильска началась еще до подписания четырехстороннего соглашения. Компания «Норникель», как градообразующее предприятие, 
+            много лет системно занимается вопросами обновления города. Ведь именно в Норильске проживает большинство сотрудников компании и важно создать 
+            им современные и комфортные условия не только для работы, но и для жизни.
+          </p>  
+          
+          <div class="future_slider_container">
+            <div class="future_slider">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> 
+              <div class="future_slider_item" id="future_slider_item_1">
+                <div class="future_slider_item_img" width=50%>
+                  <img src="701.jpeg" alt="Спортхолл «Айка»"/>
+                </div>              
+                <div class="future_slider_item_text" width=50%>
+                  <h4>Спортхолл «Айка»</h4>
+                  <p class="description">
+                    В 2020 году в Норильске открылся спортхолл «Айка». Его строили два года, а инвестор в лице компании «Норникель» вложил в проект 3,6 млрд руб. 
+                    Вместимость трибун спорткомплекса до 1 000 человек.
+                  </p>
+                  <p class="description">
+                    «Айка» и предусматривает возможность заниматься разными видами спорта, но основное назначение спорткомплекса — тренировочная база для мини-футбольного клуба «Норникель».
+                  </p>
+                  <p class="description">
+                    Комплекс получил свое название в честь медведицы по имени Айка, которая в 1970-х гг. жила в квартире режиссера Норильской телестудии Юрия Ледина. 
+                    Медвежонка регулярно выгуливали, и для местной детворы эти прогулки были настоящим событием.
+                  </p>
+                </div>              
+              </div>
+              <div class="future_slider_item" id="future_slider_item_2">
+                <div class="future_slider_item_img">
+                  <img src="702.jpeg" alt="Плавательный бассейн"/>
+                </div>              
+                <div class="future_slider_item_text">
+                  <h4>Ледовая арена «Таймыр»</h4>
+                  <p class="description">
+                    Ее возвели в 2014 году в Дудинке. Помимо проката коньков, в новой ледовой арене жители Дудинки могут играть в хоккей с шайбой, заниматься фигурным катанием, 
+                    посещать тренажерный зал и зал хореографии. Спорткомплекс принимает до 1,5 тыс. посетителей в неделю.
+                  </p>
+                  <p class="description">
+                    С 2016 года в ней проводятся  соревнования по керлингу. В 2017 году в Дудинку приехали сильнейшие женские команды мира. В следующие годы соревнования продолжились, 
+                    и в них участвовали спортсмены из Швеции, Шотландии, Канады, США, Швейцарии и Кореи. Помимо этого, под крышей арены открылась школа кёрлинга, в которой занимаются 
+                    более 100 человек от 13 до 65 лет.
+                  </p>
+                </div>              
+              </div>     
+              <div class="future_slider_item" id="future_slider_item_3">
+                <div class="future_slider_item_img">
+                  <img src="704.jpeg" alt="СРК «Арена Норильск»"/>
+                </div>              
+                <div class="future_slider_item_text">
+                  <h4>СРК «Арена Норильск»</h4>
+                  <p class="description">
+                    Осенью 2013 года начал работу «Арена Норильск» — крупнейший в мире спортивно-развлекательным центр, расположенный за Полярным кругом.
+                  </p>
+                  <p class="description">
+                    Его площадь составила более 33 тыс. кв. м. На разных уровнях размещены фитнес-центры, спортивные залы, а также аквапарк, 
+                    площадь зеркала воды которого — 750 кв. м.
+                  </p>
+                  <p class="description">
+                    Строительство спортивно-развлекательного комплекса «Арена-Норильск» началось в 2005 году, но в 2009 было приостановлено. 
+                    Позже проект «Арены-Норильск» значительно изменили, а здание реконструировали.
+                  </p>
+                  <p class="description">
+                    Итоговая стоимость объекта — более 2 млрд. руб.
+                  </p>
+                </div>              
+              </div>
+              <div class="future_slider_item" id="future_slider_item_4">
+                <div class="future_slider_item_img">
+                  <img src="703.jpg" alt="Аквапарк «Тропикана»"/>
+                </div>              
+                <div class="future_slider_item_text">
+                  <h4>Аквапарк «Тропикана»</h4>
+                  <p class="description">
+                    В 2015 году в СРК «Арена Норильск» открылся самый северный аквапарк России — «Тропикана». Это уникальный объект, который позволяет жителям заполярного города 
+                    наслаждаться водными развлечениями даже в суровых климатических условиях.
+                  </p>
+                  <p class="description">
+                    «Тропикана» может одновременно принять около 400 посетителей. Аквапарк оборудован современной системой очистки воды и поддержания оптимальной температуры.
+                  </p>
+                  <p class="description">
+                    Норильчанам доступны несколько бассейнов разной глубины, включая волновой бассейн, водные горки, спа-зона с гидромассажными установками, 
+                    детская безопасная зона, а также сауны и парные.
+                  </p>
+                </div>              
+              </div>             
+              
+              <input type="radio" name="r" id="r21" checked>
+              <input type="radio" name="r" id="r22">
+              <input type="radio" name="r" id="r23">
+              <input type="radio" name="r" id="r24">
+              
+              <div class="navigation_auto">
+                <div class="auto_btn21"></div>
+                <div class="auto_btn22"></div>
+                <div class="auto_btn23"></div>
+                <div class="auto_btn24"></div>
+              </div>          
+            </div>  
+            <div class="navigation_manual">
+              <label for="r21" class="manual_btn"></label>
+              <label for="r22" class="manual_btn"></label>
+              <label for="r23" class="manual_btn"></label>
+              <label for="r24" class="manual_btn"></label>
+            </div>      
+          </div>   
+        </div>
+        </div>
+      </div>      
+    <div class="container_mini">
+      <div class="content">
+        <div class="benefit_container">
+          <div class="benefit_column">
+            <img src="school.png" alt="Лицей им. Долгих"/>
+            <p>
+              Норильск становится городом будущего, привлекательным для молодежи
+            </p>
+          </div>
+          <div class="benefit_column">
+            <img src="bus.png" alt="Северобус"/>
+            <p>
+              Комфортные условия не только для работы, но и для жизни 
+            </p>
+          </div>
+          <div class="benefit_column">
+            <img src="tower.png" alt="Общественно-культурный центр «Башня»"/>
+            <p>
+              Единственный пример, когда частная компания настолько масштабно инвестирует в реновацию
+            </p>
+          </div>
+        </div>
+      </div>    
+    </div>      
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+    <!-- Левая часть -->
+    <div class="footer__left">
+      <div class="logo">
+        <a href="https://www.newslab.ru"><img src="newslab-logo.svg" alt="логотип newslab"></a>
+      </div>
+      <div class="footer_age">18+</div>
+    </div>
+
+    <!-- Правая часть -->
+    <div>
+      <p>
+        «Newslab» — ведущая интернет-газета Красноярского края с 2001 года.<span class="desktop-br"></span><br>
+        Ежемесячно нас читают 775 000 человек.
+      </p>
+      <p>
+        Наши новости используют местные СМИ, <span class="desktop-br"></span>а информация с сайта <br>попадает в
+        системы мониторинга.
+      </p>
+    </div>
+  </div>
+
+  <!-- Разделительная линия -->
+  <div class="footer__line"></div>
+
+  <!-- Нижняя часть -->
+  <div class="footer__bottom">
+    <div class="footer__site"><a href="https://www.newslab.ru">www.newslab.ru</a>
+    </div>
+    <div>
+      Разработка и дизайн Newslab. © ООО «Лаборатория Новостей», 2003–2025.
+      <p>Фото: ttelegraf.ru, kcson-norilsk.ru, Арсений Арлюков, Николай Щипко, Денис Кожевников</p>
+    </div>
+  </div>
+</footer>
+
+<footer class="footer mobile">
+  <div class="footer__container">
+    <!-- Левая часть -->
+    <div class="footer__left">
+      <div class="logo">
+        <a href="https://www.newslab.ru"><img src="newslab-logo.svg" alt="логотип newslab"></a>
+      </div>
+      <div class="footer_age">18+</div>
+    </div>
+
+    <!-- Правая часть -->
+    <div>
+      <p>
+        «Newslab» — ведущая интернет-газета Красноярского края с 2001 года.<span class="desktop-br"></span>
+        Ежемесячно нас читают 775 000 человек.
+      </p>
+      <p>
+        Наши новости используют местные СМИ, <span class="desktop-br"></span>а информация с сайта попадает в
+        системы мониторинга.
+      </p>
+    </div>
+  </div>
+
+  <!-- Разделительная линия -->
+  <div class="footer__line"></div>
+
+  <!-- Нижняя часть -->
+  <div class="footer__bottom">
+    <div class="footer__site"><a href="https://www.newslab.ru">www.newslab.ru  Разработка и дизайн Newslab. © ООО «Лаборатория Новостей», 2003–2025.</a>
+      <p>Фото: ttelegraf.ru, kcson-norilsk.ru, Арсений Арлюков, Николай Щипко, Денис Кожевников</p></div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
