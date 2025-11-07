@@ -1439,25 +1439,10 @@ h2 {
 
 /* Адаптивные стили для цитат */
 
-@media (min-width: 768px) {
-  .blockquote_mini.trans {
-    padding: 5px 5px 5px 50px;
-    margin-bottom: 0rem;
-  }
-}
-
 @media (max-width: 599px) {
   .blockquote_mini.trans {
     padding: 5px 5px 5px 50px;
     margin-bottom: 0rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .blockquote_mini.trans p {
-    font-size: 0.8rem;
-    line-height: 0.8rem;
-    margin: 0 0 4px;
   }
 }
 
@@ -1466,13 +1451,6 @@ h2 {
     font-size: 0.7rem;
     line-height: 0.7rem;
     margin: 0 0 4px;
-  }
-}
-
-@media (min-width: 768px) {
-  .blockquote_mini.trans cite {
-    font-size: 0.8rem;
-    line-height: 0.8rem;
   }
 }
 

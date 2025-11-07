@@ -251,6 +251,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log(`Слайдер ${containerIndex + 1}: найдено ${sliderItems.length} слайдов`);
 
+    // Решение проблемы с прокруткой
+    function setupScrollPrevention() {
+      // 1. Устанавливаем tabindex="-1" для всех интерактивных элементов
+      const interactiveElements = container.querySelectorAll('button, input, .manual_btn');
+      interactiveElements.forEach(el => {
+        el.setAttribute('tabindex', '-1');
+      });
+      
+      // 2. Добавляем обработчики для предотвращения прокрутки
+      container.addEventListener('click', (e) => {
+        // Если клик по интерактивному элементу слайдера
+        if (e.target.matches('button, input, .manual_btn')) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      });
+      
+      // 3. Предотвращаем поведение по умолчанию для всех элементов управления
+      const allControls = container.querySelectorAll('.swiper-button-prev, .swiper-button-next, .manual_btn, input[type="radio"]');
+      allControls.forEach(control => {
+        control.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+        });
+      });
+    }
+
     // Инициализация слайдера
     function initSliderState() {
       sliderItems.forEach((item, index) => {
@@ -445,7 +472,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Обработчики для стрелок навигации
     if (nextButton) {
-      nextButton.addEventListener('click', goToNextSlide);
+      nextButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        goToNextSlide();
+      });
       nextButton.addEventListener('mouseenter', stopAutoSlide);
       nextButton.addEventListener('mouseleave', () => {
         if (!autoScrollStoppedByUser && isSliderInCenter) {
@@ -455,7 +486,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (prevButton) {
-      prevButton.addEventListener('click', goToPrevSlide);
+      prevButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        goToPrevSlide();
+      });
       prevButton.addEventListener('mouseenter', stopAutoSlide);
       prevButton.addEventListener('mouseleave', () => {
         if (!autoScrollStoppedByUser && isSliderInCenter) {
@@ -466,7 +501,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Обработчики для кнопок
     manualButtons.forEach((button, index) => {
-      button.addEventListener('click', () => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
         console.log(`Слайдер ${containerIndex + 1}: клик по кнопке ${index}`);
         goToSlide(index);
         stopAutoSlide();
@@ -485,13 +522,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Обработчики для радио-кнопок
     radioButtons.forEach((radio, index) => {
-      radio.addEventListener('change', () => {
+      radio.addEventListener('change', (e) => {
+        e.preventDefault();
         console.log(`Слайдер ${containerIndex + 1}: изменение радио-кнопки ${index}`);
         goToSlide(index);
         stopAutoSlide();
 
         // Также считаем, что пользователь остановил автоматическую прокрутку
         autoScrollStoppedByUser = true;
+      });
+      
+      radio.addEventListener('click', (e) => {
+        e.preventDefault();
       });
     });
 
@@ -515,6 +557,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Инициализация - показываем первый слайд
     initSliderState();
+    
+    // Настраиваем предотвращение прокрутки
+    setupScrollPrevention();
     
     // Первоначальная проверка положения
     setTimeout(() => {
